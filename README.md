@@ -8,3 +8,4 @@ The repository includes two sample codes of the pipelline for using LSTM model t
 2) Run scripts: First is to connects the Google Colab service for using GPU for training. Then assign the correct directories for your training data on Google drive. If local GPU is available, you need to adjust the codes. 
 3) Collect results: After successfully run the script, it will output csv file that collect the median NSE score at each catchment.
 4) N.B. The hyperparameters selection process has been skipped here.
+5) N.B. If you have any question about the dataset, please contact the author for further information.
