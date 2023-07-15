@@ -10,4 +10,4 @@ The repository includes two sample codes of the pipelline for using LSTM model t
 4) N.B. The hyperparameters selection process has been skipped here.
 5) N.B. If you have any question about the dataset, please contact the author for further information.
 
-# Citation: https://doi.org/10.1016/j.jhydrol.2022.128577
+### Citation: https://doi.org/10.1016/j.jhydrol.2022.128577
