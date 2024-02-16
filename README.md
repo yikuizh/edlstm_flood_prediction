@@ -1,7 +1,10 @@
 # Sample codes for JoH paper 'Generalization of an Encoder-decoder LSTM model for flood prediction in ungauged catchments':
 The repository includes sample workflow codes for using Encoder-decoder LSTM model to set up, train, and evaluate a regional and PUB flood prediction model.
 1) `lstm_regional.py`/`lstm_regional.ipynb` -- Regional model: The Encoder-decoder LSTM-regional model will be trained on flood events at all 35 catchments, 50% as the training set, 25% as validation set, 25% as the test set. Namely one model for prediction on all catchments.
-2) `lstm_pub.py`/'lstm_pub.ipynb' -- PUB model: K-fold split strategy is introduced to achieve pseudo PUB prediction. The ED-LSTM-PUB models are trained on flood events at k-1 folds of catchments as gauged catchments, and test on catchments the rest fold as ungauged catchments. The process is repeated k times until all catchments are tested as ungauged catchments once.
+2) `lstm_pub.py`/'lstm_pub.ipynb' -- Prediction in ungauged basin (PUB) model: K-fold split strategy is introduced to achieve pseudo PUB prediction on the entire dataset. The ED-LSTM-PUB models are trained on flood events at k-1 folds of catchments as gauged catchments, and test on catchments the rest fold as ungauged catchments. The process is repeated k times until all catchments are tested as ungauged catchments once.
+3) The model structure:
+![image](https://github.com/yikuizh/edlstm_flood_prediction/assets/55485922/17d66385-c84c-4e5c-9d0f-092ead568017)
+
 
 # How to run:
 1) Prepare your dataset: If you have a continuous long-term streamflow dataset, first slice the continuous dataset into individual flood events at an hourly scale, as well as the corresponding runoff, precipitation, and temperature data.
